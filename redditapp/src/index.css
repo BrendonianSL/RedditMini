@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --dm-bg-dark: hsl(0, 0%, 5%);
+  --dm-bg: hsl(0, 0%, 10%);
+  --dm-bg-light: hsl(0, 0%, 15%);
+  --dm-text: hsl(0, 0%, 95%);
+  --dm-text-muted: hsl(0, 0%, 70%);
+
+  --lm-bg-dark: hsl(0, 0%, 95%);
+  --lm-bg: hsl(0, 0%, 90%);
+  --lm-bg-light: hsl(0, 0%, 85%);
+  --lm-text: hsl(0, 0%, 10%);
+  --lm-text-muted: hsl(0, 0%, 30%);
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: hsl(0, 0%, 10%);
+  font-family: 'Inter', sans-serif
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: .875rem;
+}
+
+.postButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .75rem;
+  border-radius: 1rem;
+  padding: .50rem .75rem;
+}
+
+.clamptext {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
